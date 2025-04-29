@@ -18,7 +18,7 @@ class InferlessPythonModel:
         
         print(f"Available models: {models}")
 
-        model_id = "llama3.2:latest"
+        model_id = "mistral-small:24b-instruct-2501-q4_K_M"
         if not any(model['name'] == model_id for model in models):
             manager.download_model(model_id)
 
